@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jobqueue_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jobqueue/jobqueue_{{ version }}.tar.gz
-  sha256: 365f9072659eb6bcc7c74dd0649fbfd956ee9bb80005e19398d14fc76ed35ba2
+  sha256: fa5ca57a05166643ed3129213148fc19474b79b09c45bfc373b5ced795092732
 
 build:
   number: 0
