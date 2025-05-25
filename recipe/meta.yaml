@@ -30,24 +30,24 @@ requirements:
     - r-base
     - r-r6
     - r-cli
+    - r-interprocess >=1.2.0
     - r-later
     - r-magrittr
     - r-parallelly
     - r-promises
     - r-ps
     - r-rlang
-    - r-semaphore
   run:
     - r-base
     - r-r6
     - r-cli
+    - r-interprocess >=1.2.0
     - r-later
     - r-magrittr
     - r-parallelly
     - r-promises
     - r-ps
     - r-rlang
-    - r-semaphore
 
 test:
   commands:
