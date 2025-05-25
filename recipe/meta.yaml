@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jobqueue_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jobqueue/jobqueue_{{ version }}.tar.gz
-  sha256: 50720e3c7ec6453e48c85f81e778b352c9f61de694bca571c42e4249b80359f6
+  sha256: a00e80c037a982903bcaea201390b913ba901b9aa915e75262ce41965c0ebf06
 
 build:
   number: 0
@@ -30,24 +30,24 @@ requirements:
     - r-base
     - r-r6
     - r-cli
+    - r-interprocess >=1.2.0
     - r-later
     - r-magrittr
     - r-parallelly
     - r-promises
     - r-ps
     - r-rlang
-    - r-semaphore
   run:
     - r-base
     - r-r6
     - r-cli
+    - r-interprocess >=1.2.0
     - r-later
     - r-magrittr
     - r-parallelly
     - r-promises
     - r-ps
     - r-rlang
-    - r-semaphore
 
 test:
   commands:
